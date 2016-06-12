@@ -1,0 +1,64 @@
+.our-projects {
+	background-color: #ccc;
+
+	.meet-our-team {
+		width: 43.25%;
+	}
+
+	.project-categories {
+		
+		.ui-widget-content {
+			border: medium none;
+			background: none;
+		}
+
+		.ui-widget-header {
+			@extend .ui-widget-content;
+			text-align: center;
+		}
+
+		.ui-tabs-nav { 
+
+			li {
+				float: none;
+				display:inline-block;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 14px;
+    			font-weight: 500;
+
+				&.ui-state-active {
+					background-image: none;
+				}
+
+				&.ui-state-default {
+					background-image: none;
+				}
+			}
+		}
+
+		.ui-tabs-panel{
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.single-project {
+			width: 22%;
+    		padding: 10px;
+    		display: inline-block;
+    		background-color: #fff;
+    		margin: 3px 0px;
+		}
+
+		.single-project-title img {
+			width: 100%;
+		}
+
+		.single-project-action li {
+		    display: inline-block;
+		    width: 48%;
+		    text-align: center;
+		}
+
+	}
+}
