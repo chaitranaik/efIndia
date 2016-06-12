@@ -216,6 +216,7 @@ header{
 	width:49%;
 	float:left;
 	margin-right:2%;
+	border-right:1px solid #eaeced;
 }
 .our-services-right{
 	width:49%;
@@ -233,8 +234,41 @@ header{
 	}
 }
 .our-team{
+	width:$max-page-width;
+	margin:0 auto;
+}
+.meet-our-team{
 	width:50%;
 	margin:0 auto;
+	img{
+		float: left;
+    	margin-right: 20px;
+	}
+}
+.team-members{
+	.member{
+		width:24%;
+		float:left;
+		background:#f5f5f5;
+		text-align:center;
+		margin-right:10px;
+		ul{
+			margin: 10px 0;
+			list-style: none;
+			background:#fff;
+			min-height:60px;
+			li{
+				float: left;
+				padding:20px 15px;
+				a{
+					img{
+						display:inline-block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
 }
 footer{
 	background:#2b2c2d;
