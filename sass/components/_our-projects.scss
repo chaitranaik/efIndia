@@ -1,8 +1,10 @@
 .our-projects {
-	background-color: #ccc;
+	background-color: #efefef;
+	padding: 10px 0;
+	margin: 3% 0 0;
 
 	.our-projects-title {
-		margin: 3% auto 7%;
+		margin: 3% auto;
 		width: 43.25%;
 
 		img {
@@ -27,18 +29,27 @@
 
 			li {
 				float: none;
-				display:inline-block;
-				border: 1px solid #ccc;
+				display: inline-block;
+				border: 1px solid #cecece;
 				border-radius: 5px;
 				font-size: 14px;
-    			font-weight: 500;
-
-				&.ui-state-active {
-					background-image: none;
-				}
+    			font-weight: 700;
+    			padding: 3px 20px;
 
 				&.ui-state-default {
 					background-image: none;
+
+					a{
+						color: #bbbbbb;
+					}
+				}
+
+				&.ui-state-active {
+					background-image: none;
+
+					a{
+						color: $body-color;
+					}
 				}
 			}
 		}
@@ -70,10 +81,10 @@
 }
 
 .location-wrapper {
-	margin:5% 0 0;
+	margin: 5% 0 0;
 
 	.location-inner {
-		width:100%;
-		height:420px;
+		width: 100%;
+		height: 420px;
 	}
 }
