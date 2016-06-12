@@ -30,6 +30,7 @@ h2{
 }
 h3{
 	font-size:26px;
+	margin: 10px 0;
 	span{
 		text-transform: uppercase;
 	}
@@ -140,7 +141,7 @@ header{
 						    border-right: 15px solid transparent;
 						    border-bottom: 9px solid #1faae2;
 						    right: 30%;
-						    bottom: -34px;
+						    bottom: -35px;
 						}
 					}
 				}
@@ -159,7 +160,7 @@ header{
 	}
 }
 .banner-wrapper{
-	background:url(../images/banner.png) no-repeat;
+	background:url(../images/banner.png) no-repeat top center;
 }
 .banner{
 	max-width:$max-page-width;
@@ -169,11 +170,16 @@ header{
 	font-size:59px;
 	color:#fff;
 	text-transform:uppercase;
+	padding: 18.5% 0 0;
+    line-height: 1.2;
+    position:relative;
+    z-index:1;
 	span{
 		font-weight:300;
 		font-size:45px;
 		text-transform: none;
 		display: block;
+		padding-left:10%;
 		position:relative;
 		&:after{
 			content: "";
@@ -181,8 +187,9 @@ header{
 			height: 90px; 
 			position:absolute;
 			background:url(../images/and.png);
-	       	right: 40%;
-	       	bottom: -23px;
+	       	left: 18%;
+    		bottom: 8px;
+    		z-index:-1;
 		}
 	}
 }
@@ -194,6 +201,7 @@ header{
 }
 .slider{
 	position:relative;
+	padding: 12.5% 0 12.5% 27%;
 }
 .slides li{
 	display:none;
@@ -214,9 +222,9 @@ header{
 }
 .about-company-wrapper{
 	.about-company{
-		width:48%;
+		width:44%;
 		float:left;
-		margin-right:2%;
+		margin-right:6%;
 	}
 	img{
 		float:left;
@@ -225,36 +233,40 @@ header{
 	}
 	.about-company-description{
 		float:right;
-		width:70%;
+		width:75%;
 	}
 }
 .what-we-do{
 	width:50%;
-	margin:0 auto;
+	margin: 16% auto 7%;
 	img{
 		float:left;
-		margin-right:10px;
+		margin-right: 30px;
 	}
 }
 .our-services-left{
-	width:49%;
+	width:44%;
 	float:left;
-	margin-right:2%;
+	padding-right:5%;
 	border-right:1px solid #eaeced;
 }
 .our-services-right{
-	width:49%;
+	width:44%;
 	float:left;
+	padding-left:6%;
 }
 .our-services-left .service, .our-services-right .service{
 	overflow:auto;
-	margin:0 0 20px 0;
+	margin:0 0 19% 0;
 	img{
 		float:left;
 	}
 	div{
 		float:right;
 		width:75%;
+	}
+	&:last-child{
+		margin:0;
 	}
 }
 .our-team{
@@ -263,7 +275,7 @@ header{
 }
 .meet-our-team{
 	width:50%;
-	margin:0 auto;
+	margin: 3% auto 7%;
 	img{
 		float: left;
     	margin-right: 20px;
@@ -276,11 +288,16 @@ header{
 		background:#f5f5f5;
 		text-align:center;
 		margin-right:10px;
+		padding: 45px 0 15px;
+		img{
+			margin: 0 0 22px;
+		}
 		ul{
 			margin: 10px 0;
 			list-style: none;
 			background:#fff;
 			min-height:60px;
+			padding: 0 10%;
 			li{
 				float: left;
 				padding:20px 15px;
@@ -294,12 +311,16 @@ header{
 		}
 	}
 }
+.google-map{
+	margin:5% 0 0;
+}
 footer{
 	background:#2b2c2d;
 }
 .footer-container{
 	max-width:$max-page-width;
 	margin:0 auto;
+	padding: 6% 0;
 }
 .footer-social{
 	ul{
@@ -310,7 +331,7 @@ footer{
 		li{
 			float: left;
 			border-right:1px solid #3c3e3f;
-			padding:20px 15px;
+			padding: 15px 21px;
 			a{
 				img{
 					display:inline-block;
@@ -329,15 +350,15 @@ footer{
 		font-size: 14px;
 		color:#6d6e71;
 		font-weight: 700;
-		width:40%;
-		padding:10px 20px;
+		width: 47%;
+    	padding: 20px 20px;
 		img{
 			margin: 0 10px -8px 0;
 		}
 		button{
 			float:right;
 			background:#494c4d;
-			padding:6px 10px;
+			padding:8px 20px;
 			border-radius:5px;
 			text-align:center;
 			border:none;
@@ -351,6 +372,7 @@ footer{
 	color:#6d6e71;
 	font-size:13px;
 	font-weight:300;
+	padding: 5% 0 0;
 	p{
 		float:left;
 	}
