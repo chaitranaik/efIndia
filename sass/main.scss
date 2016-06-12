@@ -41,7 +41,7 @@ header{
 	background:#eceef4;
 }
 .header-container{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 }
 .header-navigation{
@@ -53,13 +53,13 @@ header{
 		margin: 0;
 		list-style: none;
 		li{
-			float: left;
-    		background: #fff;
-    		padding:7px 10px;
-    		margin-right:10px;
-    		border-radius:5px;
-    		width:16%;
-    		text-align:center;
+		    float: left;
+		    background: #fff;
+		    padding: 5px 11px;
+		    margin-right: 5px;
+		    border-radius: 5px;
+		    width: 14%;
+		    text-align: center;
 			a{
 				font-weight: 700;
 				font-size: 12px;
@@ -86,7 +86,7 @@ header{
 		li{
 			float: left;
 			border-right:1px solid #dee0e6;
-			padding:20px 15px;
+			padding:20px 19px;
 			a{
 				img{
 					display:inline-block;
@@ -100,14 +100,16 @@ header{
 	}
 }
 .logo-wrapper{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 }
-
+.logo{
+	margin: 5% 0 4%;
+}
 .navigation-wrapper{
 	border-top:1px solid #eceef4;
 	.navigation-container{
-		width:$max-page-width;
+		max-width:$max-page-width;
 		margin:0 auto;
 		ul{
 			padding:0;
@@ -116,7 +118,7 @@ header{
 			li{
 				float: left;
 				border-right:1px solid #dee0e6;
-				padding:20px 15px;
+				padding: 32px 23px;
 				a{
 					text-transform:capitalize;
 					color:#6d6e71;
@@ -134,11 +136,11 @@ header{
 					        width: 0; 
 							height: 0; 
 							position:absolute;
-							border-left: 10px solid transparent;
-							border-right: 10px solid transparent;							  
-							border-bottom: 6px solid #1faae2;
-					       	right: 40%;
-					       	bottom: -23px;
+							border-left: 15px solid transparent;
+						    border-right: 15px solid transparent;
+						    border-bottom: 9px solid #1faae2;
+						    right: 30%;
+						    bottom: -34px;
 						}
 					}
 				}
@@ -150,9 +152,9 @@ header{
 	}
 	.search{
 		float: right;
-    	padding: 20px 0;
+    	padding: 32px 0;
     	img{
-    		margin: 0 10px -6px 0;
+    		margin: 0 35px -6px 0;
     	}
 	}
 }
@@ -160,7 +162,7 @@ header{
 	background:url(../images/banner.png) no-repeat;
 }
 .banner{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 	text-align:center;
 	font-weight:700;
@@ -184,8 +186,30 @@ header{
 		}
 	}
 }
+
+/* slider */
+
+.flex-prev{
+	display:none;
+}
+.slider{
+	position:relative;
+}
+.slides li{
+	display:none;
+}
+.slides li:first-child{
+	display:block;
+}
+.flex-direction-nav{
+	position:absolute;
+	right:0;
+	top:0;
+	background:#f4f4f4;
+}
+
 .content{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 }
 .about-company-wrapper{
@@ -234,7 +258,7 @@ header{
 	}
 }
 .our-team{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 }
 .meet-our-team{
@@ -274,7 +298,7 @@ footer{
 	background:#2b2c2d;
 }
 .footer-container{
-	width:$max-page-width;
+	max-width:$max-page-width;
 	margin:0 auto;
 }
 .footer-social{
