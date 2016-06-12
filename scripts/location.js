@@ -16,7 +16,7 @@ function initialize() {
 		styles: styleArray
 	};
 
-	var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	var map = new google.maps.Map(document.getElementById("location"), mapProp);
 
 	var marker=new google.maps.Marker({
 		position:mapProp.center,
