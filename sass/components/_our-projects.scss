@@ -1,8 +1,14 @@
 .our-projects {
 	background-color: #ccc;
 
-	.meet-our-team {
+	.our-projects-title {
+		margin: 3% auto 7%;
 		width: 43.25%;
+
+		img {
+			float: left;
+	    	margin-right: 20px;
+		}
 	}
 
 	.project-categories {
