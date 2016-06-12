@@ -7,10 +7,12 @@ var styleArray = [
 	]
 }
 ];
-
+ 
 function initialize() {
+
+	//Specifing map properties 
 	var mapProp = {
-		center:new google.maps.LatLng(12.9716 , 77.5946),
+		center:new google.maps.LatLng(24.7136, 46.6753),
 		zoom:15,
 		mapTypeId:google.maps.MapTypeId.TERRAIN,
 		styles: styleArray
@@ -26,6 +28,5 @@ function initialize() {
 	marker.setMap(map);
 }
 
+// Initializing map on window load
 google.maps.event.addDomListener(window, 'load', initialize);
-
-// End: Google Map Integration
