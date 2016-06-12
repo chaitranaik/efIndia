@@ -1,0 +1,180 @@
+header {
+	background: #eceef4;
+}
+
+.header-container {
+	max-width: $max-page-width;
+	margin: 0 auto;
+}
+
+.header-navigation {
+	width: 50%;
+	float: left;
+	padding: 15px 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li {
+		    float: left;
+		    background: #fff;
+		    padding: 5px 11px;
+		    margin-right: 5px;
+		    border-radius: 5px;
+		    width: 14%;
+		    text-align: center;
+
+			a {
+				font-weight: 700;
+				font-size: 12px;
+				text-decoration: none;
+				color: $body-color;
+				text-transform: capitalize;
+
+				img {
+					display: inline-block;
+					float: left;
+					margin: 2px 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+.header-social-media {
+	width: 50%;
+	float: right;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float: right;
+
+		li {
+			float: left;
+			border-right: 1px solid #dee0e6;
+			padding: 20px 19px;
+
+			a {
+
+				img {
+					display: inline-block;
+					margin: 0 auto;
+				}
+			}
+
+			&:first-child{
+				border-left: 1px solid #dee0e6;
+			}
+		}
+	}
+}
+
+.logo-wrapper {
+	max-width: $max-page-width;
+	margin: 0 auto;
+	padding: 5% 0 4%;
+}
+
+.logo {	
+	float: left;
+}
+
+.contact-information {
+	float: right;
+	padding: 25px 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float: right;
+
+		li {
+			float: left;
+			border-left: 2px solid #dee0e6;
+			padding: 0 19px;
+			
+			a {
+				
+				img {
+					display: inline-block;
+					margin: 5px auto;
+				}
+			}
+
+			&:first-child{
+				border-left: none;
+			}
+		}
+	}
+}
+
+
+.navigation-wrapper {
+	border-top: 1px solid #eceef4;
+
+	.navigation-container {
+		max-width: $max-page-width;
+		margin: 0 auto;
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+
+			li {
+				float: left;
+				border-right: 1px solid #dee0e6;
+				padding: 32px 23px;
+
+				a {
+					text-transform: capitalize;
+					color: $body-color;
+					font-size: 13px;
+					font-weight: 700;
+					text-decoration: none;	
+					position: relative;	
+
+					span {
+						text-transform: uppercase;
+					}
+
+					&:hover, 
+					&:focus, 
+					&:active {
+						color: #1faae2;
+
+						&:after {
+							content: "";
+					        width: 0; 
+							height: 0; 
+							position: absolute;
+							border-left: 15px solid transparent;
+						    border-right: 15px solid transparent;
+						    border-bottom: 9px solid #1faae2;
+						    right: 30%;
+						    bottom: -35px;
+						}
+					}
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+	}
+
+	.search {
+		float: right;
+    	padding: 32px 0;
+
+    	img {
+    		margin: 0 35px -6px 0;
+    	}
+	}
+}

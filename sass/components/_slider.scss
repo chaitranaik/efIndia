@@ -1,0 +1,25 @@
+.flex-prev {
+	display:none;
+}
+
+.slider {
+	position:relative;
+	padding: 12.5% 0 12.5% 27%;
+}
+
+.slides {
+	li {
+		display:none;
+
+		&:first-child {
+			display:block;
+		}
+	}
+} 
+
+.flex-direction-nav{
+	position:absolute;
+	right:0;
+	top:0;
+	background:#f4f4f4;
+}

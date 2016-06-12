@@ -1,0 +1,97 @@
+footer {
+	background: #2b2c2d;
+
+	.footer-container {
+		max-width: $max-page-width;
+		margin: 0 auto;
+		padding: 6% 0;
+	}
+
+	.footer-social {
+
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			float: left;
+
+			li {
+				float: left;
+				border-right: 1px solid #3c3e3f;
+				padding: 15px 21px;
+
+				a {
+
+					img {
+						display: inline-block;
+						margin: 0 auto;
+					}
+				}
+			}
+
+			li:first-child{
+				border-left: 1px solid #3c3e3f;
+			}
+		}
+
+		.newsletter {
+			float: right;
+			background: #393b3c;
+			border-radius: 5px;
+			font-size: 14px;
+			color: $body-color;
+			font-weight: 700;
+			width: 47%;
+	    	padding: 20px 20px;
+
+			img {
+				margin: 0 10px -8px 0;
+			}
+
+			button {
+				float: right;
+				background: #494c4d;
+				padding: 8px 20px;
+				border-radius: 5px;
+				text-align: center;
+				border: none;
+				font-size: 14px;
+				color: $body-color;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.copyright {
+		color: $body-color;
+		font-size: 13px;
+		font-weight: 300;
+		padding: 5% 0 0;
+
+		p {
+			float: left;
+		}
+
+		ul {
+			float: right;
+			list-style-type: square;
+
+			li {
+				float: left;
+				padding: 0 25px 0 0px;
+
+				a {
+					text-decoration: none;
+					color: $body-color;
+					font-size: 13px;
+					font-weight: 300;
+				}
+
+				&:last-child{
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+

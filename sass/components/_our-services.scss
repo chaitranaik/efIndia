@@ -1,0 +1,68 @@
+.content {
+	max-width: $max-page-width;
+	margin: 0 auto;
+}
+
+.about-company-wrapper {
+
+	.about-company {
+		width: 44%;
+		float: left;
+		margin-right: 6%;
+	}
+
+	img {
+		float: left;
+		margin-right: 10px;
+		display: block;
+	}
+
+	.about-company-description {
+		float: right;
+		width: 75%;
+	}
+}
+
+.what-we-do {
+	width: 50%;
+    margin: 4% auto 5%;
+    border-top: 1px solid #ccc;
+    padding: 3% 0 0;
+
+	img {
+		float: left;
+		margin-right: 30px;
+	}
+}
+
+.our-services-left {
+	width:44%;
+	float: left;
+	padding-right: 5%;
+	border-right: 1px solid #eaeced;
+}
+
+.our-services-right {
+	width: 44%;
+	float: left;
+	padding-left: 6%;
+}
+
+.our-services-left .service, 
+.our-services-right .service {
+	overflow: auto;
+	margin: 0 0 19% 0;
+
+	img {
+		float: left;
+	}
+
+	div {
+		float: right;
+		width: 75%;
+	}
+	
+	&:last-child{
+		margin: 0;
+	}
+}
