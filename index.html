@@ -7,6 +7,23 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1198677423497650',
+	      xfbml      : true,
+	      version    : 'v2.6'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 	<header>
 		<div class="header-container clearfix">
 			<div class="header-navigation">
@@ -19,7 +36,7 @@
 			</div>
 			<div class="header-social-media">
 				<ul>
-					<li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
+					<li><a href="javascript:;" id="fbShareBtn" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
 					<li><a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
 					<li><a href="#" target="_blank"><img src="images/instagram.png" alt="Instagram"></a></li>
 					<li><a href="#" target="_blank"><img src="images/google-plus.png" alt="Google Plus"></a></li>
@@ -173,31 +190,31 @@
 <script>
 
 	// Specify features and elements to define styles.
-	  var styleArray = [
-	    {
-	      featureType: "all",
-	      stylers: [
-	       { saturation: -80 }
-	      ]
-	    }
-	  ];
+	var styleArray = [
+	{
+		featureType: "all",
+		stylers: [
+		{ saturation: -80 }
+		]
+	}
+	];
 
 	function initialize() {
-	  var mapProp = {
-	    center:new google.maps.LatLng(12.9716 , 77.5946),
-	    zoom:15,
-	    mapTypeId:google.maps.MapTypeId.TERRAIN,
-	    styles: styleArray
-	  };
+		var mapProp = {
+			center:new google.maps.LatLng(12.9716 , 77.5946),
+			zoom:15,
+			mapTypeId:google.maps.MapTypeId.TERRAIN,
+			styles: styleArray
+		};
 
-	  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+		var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-	  var marker=new google.maps.Marker({
-		position:mapProp.center,
-  		icon:'images/map-icon.png'
-      });
+		var marker=new google.maps.Marker({
+			position:mapProp.center,
+			icon:'images/map-icon.png'
+		});
 
-	  marker.setMap(map);
+		marker.setMap(map);
 	}
 
 	// window.onload = function(){
@@ -205,5 +222,33 @@
 	// }
 
 	google.maps.event.addDomListener(window, 'load', initialize);
+	
+	// End: Google Map Integration
+
+	// Start: FB Share Integration
+	// window.fbAsyncInit = function() {
+	// 	FB.init({
+	// 		appId      : '1198677423497650',
+	// 		xfbml      : true,
+	// 		version    : 'v2.6'
+	// 	});
+	// };
+
+	// (function(d, s, id){
+	// 	var js, fjs = d.getElementsByTagName(s)[0];
+	// 	if (d.getElementById(id)) {return;}
+	// 	js = d.createElement(s); js.id = id;
+	// 	js.src = "//connect.facebook.net/en_US/sdk.js";
+	// 	fjs.parentNode.insertBefore(js, fjs);
+	// }(document, 'script', 'facebook-jssdk'));
+
+	document.getElementById('fbShareBtn').onclick = function() {
+		FB.ui(
+		 {
+		  method: 'share',
+		  href: 'https://developers.facebook.com/docs/'
+		}, function(response){});
+	}
+	// End: FB Share Integration
 </script>
 </html>
